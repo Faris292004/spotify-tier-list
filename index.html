@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist to Tier List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spotify Playlist to Tier List</h1>
+        <button id="login-button">Login with Spotify</button>
+        
+        <div id="playlist-container" style="display: none;">
+            <h2>Your Playlist</h2>
+            <ul id="song-list"></ul>
+        </div>
+
+        <div id="tier-list-container" style="display: none;">
+            <h2>Tier List</h2>
+            <div class="tier" id="tier-s">S</div>
+            <div class="tier" id="tier-a">A</div>
+            <div class="tier" id="tier-b">B</div>
+            <div class="tier" id="tier-c">C</div>
+            <div class="tier" id="tier-d">D</div>
+        </div>
+    </div>
+
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
