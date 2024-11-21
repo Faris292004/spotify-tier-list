@@ -2,8 +2,8 @@ let accessToken = null;  // Store Spotify access token
 
 // Login with Spotify
 document.getElementById('login-button').addEventListener('click', () => {
-    const clientId = 'YOUR_SPOTIFY_CLIENT_ID'; // 297f152ee59a4feea3b84d4d3a0a12d3
-    const redirectUri = 'YOUR_REDIRECT_URI';  // https://faris292004.github.io/spotify-tier-list/
+    const clientId = '297f152ee59a4feea3b84d4d3a0a12d3'; // 
+    const redirectUri = 'https://faris292004.github.io/spotify-tier-list/';  // 
     const scope = 'playlist-read-private user-library-read';
     const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${redirectUri}&scope=${scope}`;
     window.location = authUrl;
